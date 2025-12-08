@@ -1,3 +1,4 @@
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     color: #333;
 }
 
+/* Header Section */
 header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -27,12 +29,14 @@ header p {
     opacity: 0.9;
 }
 
+/* Container */
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
+/* Section Styles */
 .section {
     margin-bottom: 60px;
 }
@@ -43,6 +47,7 @@ header p {
     color: #667eea;
 }
 
+/* Skills Grid */
 .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -56,6 +61,7 @@ header p {
     text-align: center;
 }
 
+/* Contact Section */
 .contact {
     background: #667eea;
     color: white;
@@ -86,37 +92,7 @@ header p {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-
-
-.project-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.project-content h3 {
-    margin: 0 0 10px 0;
-    color: #667eea;
-    font-size: 1.5em;
-}
-
-.project-content p {
-    margin: 5px 0;
-    line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .project-card {
-        flex-direction: column;
-    }
-    
-    
-}
-
-
-/* Project Images - Clickable with hover effect */
+/* Project Images - Clickable with Hover Effect */
 .project-image {
     flex-shrink: 0;
     width: 250px;
@@ -156,6 +132,24 @@ header p {
     opacity: 0.7;
 }
 
+/* Project Content */
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-content h3 {
+    margin: 0 0 10px 0;
+    color: #667eea;
+    font-size: 1.5em;
+}
+
+.project-content p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
 
 /* Lightbox Styles */
 .lightbox {
@@ -207,4 +201,30 @@ header p {
 
 .lightbox .close:hover {
     color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+    
+    .project-card {
+        flex-direction: column;
+    }
+    
+    .project-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .lightbox .close {
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
+    }
 }
