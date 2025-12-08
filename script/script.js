@@ -4,16 +4,15 @@ function openLightbox(imageSrc) {
     const lightboxImg = document.getElementById('lightbox-img');
     lightboxImg.src = imageSrc;
     lightbox.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
+    document.body.style.overflow = 'hidden';
 }
 
 function closeLightbox() {
     const lightbox = document.getElementById('lightbox');
     lightbox.classList.remove('active');
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
+    document.body.style.overflow = 'auto';
 }
 
-// Close lightbox with Escape key
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         closeLightbox();
