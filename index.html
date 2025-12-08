@@ -40,7 +40,7 @@
             <h2>Project Highlights</h2>
             
             <div class="project-card">
-                <div class="project-image">
+                <div class="project-image" onclick="openLightbox('images/anomaly_detection.png')">
                     <img src="images/anomaly_detection.png" alt="Image Anomaly Detection">
                 </div>
                 <div class="project-content">
@@ -118,5 +118,12 @@
     </div>
 
     <script src="js/script.js"></script>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    
+    
 </body>
 </html>
