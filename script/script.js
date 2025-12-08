@@ -1,4 +1,4 @@
-<script>
+
 function openLightbox(imageSrc) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
@@ -18,4 +18,3 @@ document.addEventListener('keydown', function(event) {
         closeLightbox();
     }
 });
-</script>
