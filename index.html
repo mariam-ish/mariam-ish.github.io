@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Mariam's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,33 +14,10 @@
 
     <div class="container">
         <section class="section">
-            <h2>About Me</h2>
-            <p>Open to new challenges and opportunities in various fields using computer vision and AI.</p>
-        </section>
-
-        <section class="section">
-            <h2>Skills</h2>
-            <div class="skills">
-                <div class="skill-card">
-                    <h3>Python</h3>
-                    <p>For machine and deep learning</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Pytorch</h3>
-                    <p>CUDA and GPU acceleration</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Docker</h3>
-                    <p>Reproducable ML environments and model deployment</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
             <h2>Project Highlights</h2>
             
             <div class="project-card">
-                <div class="project-image" onclick="openLightbox('images/anomaly_detection.png')">
+                <div class="project-image" onclick="openLightbox('images/anomaly_detection.png')"> 
                     <img src="images/anomaly_detection.png" alt="Image Anomaly Detection">
                 </div>
                 <div class="project-content">
@@ -50,7 +27,7 @@
             </div>
         
             <div class="project-card">
-                <div class="project-image">
+                <div class="project-image" onclick="openLightbox('images/freight_train.png')"> 
                     <img src="images/anomaly_detection.png" alt="Freight Train Monitoring System">
                 </div>
                 <div class="project-content">
@@ -60,7 +37,7 @@
             </div>
         
             <div class="project-card">
-                <div class="project-image">
+                <div class="project-image" onclick="openLightbox('images/fire_smoke.png')">
                     <img src="images/anomaly_detection.png" alt="Fire and Smoke Detection">
                 </div>
                 <div class="project-content">
@@ -70,7 +47,7 @@
             </div>
         
             <div class="project-card">
-                <div class="project-image">
+                <div class="project-image" onclick="openLightbox('images/sensor_network.png')">
                     <img src="images/anomaly_detection.png" alt="Underground Sensor Network">
                 </div>
                 <div class="project-content">
@@ -80,7 +57,7 @@
             </div>
         
             <div class="project-card">
-                <div class="project-image">
+                <div class="project-image" onclick="openLightbox('images/research_modeling.png')">
                     <img src="images/anomaly_detection.png" alt="Research and Modeling">
                 </div>
                 <div class="project-content">
@@ -92,21 +69,6 @@
             </div>
         </section>
 
-        <section class="section">
-            <h2>E</h2>
-            <p>BS, MS, PHD</p>
-        </section>
-
-        <section class="section">
-            <h2>Work Experience</h2>
-            <p></p>
-        </section>
-
-        <section class="section">
-            <h2>Honors and Awards</h2>
-            <p>Certificates, scholarships, </p>
-        </section>
-
         <section class="section contact">
             <h2>Get In Touch</h2>
             <p>Interested in working together? Let's connect!</p>
@@ -114,7 +76,7 @@
                 <a href="mailto:your.email@example.com">your.email@example.com</a>
             </p>
         </section>
-  
+        
     </div>
 
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
@@ -122,7 +84,6 @@
         <img id="lightbox-img" src="" alt="">
     </div>
 
-    <!-- JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
